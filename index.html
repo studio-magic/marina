@@ -3,158 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<title>まりなのお話会｜ひとりで抱えなくていい。</title>
-<meta name="description" content="自分を好きになるポジティブマインドをお伝えする「まりなのお話会」。話すだけで心が少し軽くなる場所です。">
+<title>まりなのお話会</title>
 <style>
-  :root{
-    /* === リンク先（あとで差し替え可） === */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #fbeaf0;
+    display: flex;
+    justify-content: center;
   }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html,body{background:#fff4f6;}
-  body{
-    font-family:"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","Yu Gothic",YuGothic,sans-serif;
-    -webkit-text-size-adjust:100%;
+  .lp {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
   }
-  /* スマホ基準の中央寄せコンテナ */
-  .lp{
-    max-width:480px;
-    margin:0 auto;
-    background:#fff;
-    box-shadow:0 0 24px rgba(0,0,0,.06);
+  .lp img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
-  /* 画像セクション：余白なしで縦に連結 */
-  .section{
-    position:relative;
-    display:block;
-    line-height:0;
+  .section {
+    position: relative;
+    line-height: 0;
   }
-  .section img{
-    width:100%;
-    height:auto;
-    display:block;
+  .hotspot {
+    position: absolute;
+    display: block;
+    /* デバッグ用に枠線を見たい時は下のコメントを外す */
+    /* outline: 1px solid red; */
   }
-  /* ボタンに重ねる透明リンク */
-  .hotspot{
-    position:absolute;
-    display:block;
-    z-index:2;
-    border-radius:14px;
-    -webkit-tap-highlight-color:rgba(255,255,255,.25);
-  }
-  /* 軽い押下フィードバック */
-  .hotspot:active{
-    background:rgba(255,255,255,.18);
-  }
-  @media (max-width:480px){
-    .lp{box-shadow:none;}
+  .gap {
+    height: 14px;
+    background: #f9f1ec;
   }
 </style>
 </head>
 <body>
-  <main class="lp">
+<div class="lp">
 
-    <!-- 1. ヒーロー（Instagram / オープンチャット） -->
-    <section class="section" aria-label="まりなのお話会">
-      <img src="images/1.png" alt="ひとりで抱えなくていい。まりなのお話会">
-      <!-- 左：Instagramから問い合わせる -->
-      <a class="hotspot js-instagram" href="#" target="_blank" rel="noopener"
-         style="left:4%;top:88.5%;width:45%;height:9%;" aria-label="Instagramから問い合わせる"></a>
-      <!-- 右：まりなのオープンチャットに参加する -->
-      <a class="hotspot js-openchat" href="#" target="_blank" rel="noopener"
-         style="left:51%;top:88.5%;width:45%;height:9%;" aria-label="まりなのオープンチャットに参加する"></a>
-    </section>
+  <!-- 1.png : 下部に Instagram / オープンチャット ボタンあり -->
+  <div class="section">
+    <img src="images/1.png" alt="ひとりで抱えなくていい。まりなのお話会">
+    <a class="hotspot" href="https://www.instagram.com/mappppppb" target="_blank" rel="noopener"
+       style="left:2%; top:89.5%; width:46%; height:7.8%;"></a>
+    <a class="hotspot" href="#" data-link="openchat" target="_blank" rel="noopener"
+       style="left:52%; top:89.5%; width:46%; height:7.8%;"></a>
+  </div>
 
-    <!-- 2. こんなお悩みありませんか？ -->
-    <section class="section">
-      <img src="images/2.png" alt="こんなお悩みありませんか？">
-    </section>
+  <div class="section"><img src="images/2.png" alt=""></div>
+  <div class="section"><img src="images/3.png" alt=""></div>
+  <div class="gap"></div>
+  <div class="section"><img src="images/4.png" alt=""></div>
+  <div class="gap"></div>
+  <div class="section"><img src="images/5.png" alt=""></div>
+  <div class="section"><img src="images/6.png" alt=""></div>
+  <div class="section"><img src="images/7.png" alt=""></div>
+  <div class="section"><img src="images/8.png" alt=""></div>
+  <div class="section"><img src="images/9.png" alt=""></div>
+  <div class="section"><img src="images/10.png" alt=""></div>
 
-    <!-- 3. あなたは十分頑張っています -->
-    <section class="section">
-      <img src="images/3.png" alt="あなたは十分頑張っています">
-    </section>
+  <!-- 11.png : Instagram / LINE 申し込みボタンあり -->
+  <div class="section">
+    <img src="images/11.png" alt="まずは気軽に遊びに来てください">
+    <a class="hotspot" href="https://www.instagram.com/mappppppb" target="_blank" rel="noopener"
+       style="left:2%; top:59.1%; width:96%; height:11.1%;"></a>
+    <a class="hotspot" href="#" data-link="openchat" target="_blank" rel="noopener"
+       style="left:2%; top:76.4%; width:96%; height:11%;"></a>
+  </div>
 
-    <!-- 4. だから私は伝えています -->
-    <section class="section">
-      <img src="images/4.png" alt="だから私は伝えています">
-    </section>
-
-    <!-- 5. 大切にしていること -->
-    <section class="section">
-      <img src="images/5.png" alt="まりなのお話会で大切にしていること">
-    </section>
-
-    <!-- 6. ご参加実績・お声 -->
-    <section class="section">
-      <img src="images/6.png" alt="100名以上の方にご参加いただいています">
-    </section>
-
-    <!-- 7. お声（続き） -->
-    <section class="section">
-      <img src="images/7.png" alt="参加者の声">
-    </section>
-
-    <!-- 8. お声（続き） -->
-    <section class="section">
-      <img src="images/8.png" alt="話してよかった、そんなお声をたくさんいただいています">
-    </section>
-
-    <!-- 9. CTA（Instagram DM / LINE オープンチャット） -->
-    <section class="section" aria-label="お問い合わせ">
-      <img src="images/9.png" alt="気になる方は、こちらからどうぞ">
-      <!-- 左：Instagram DM -->
-      <a class="hotspot js-instagram" href="#" target="_blank" rel="noopener"
-         style="left:11%;top:74%;width:36%;height:16%;" aria-label="InstagramのDMへ"></a>
-      <!-- 右：LINE オープンチャット -->
-      <a class="hotspot js-openchat" href="#" target="_blank" rel="noopener"
-         style="left:53%;top:74%;width:36%;height:16%;" aria-label="LINEのオープンチャットへ"></a>
-    </section>
-
-    <!-- 10. まりなについて -->
-    <section class="section">
-      <img src="images/10.png" alt="まりなについて">
-    </section>
-
-    <!-- 11. 最後のCTA（Instagram / LINE 申し込み） -->
-    <section class="section" aria-label="お申し込み">
-      <img src="images/11.png" alt="まずは気軽に遊びに来てください">
-      <!-- 上：Instagramから申し込む -->
-      <a class="hotspot js-instagram" href="#" target="_blank" rel="noopener"
-         style="left:7%;top:62%;width:86%;height:14%;" aria-label="Instagramから申し込む"></a>
-      <!-- 下：LINEから申し込む -->
-      <a class="hotspot js-openchat" href="#" target="_blank" rel="noopener"
-         style="left:7%;top:80.5%;width:86%;height:14%;" aria-label="LINEから申し込む"></a>
-    </section>
-
-  </main>
-
-  <script>
-    /* =========================================================
-       リンク先の設定（ここだけ書き換えればOK）
-       ========================================================= */
-    var LINKS = {
-      instagram: "https://www.instagram.com/mappppppb/?hl=ja",
-      // ▼ オープンチャット / LINE のURLが届いたら下の "#" を差し替えてください
-      openchat:  "#"
-    };
-
-    // Instagramリンクを一括設定
-    document.querySelectorAll('.js-instagram').forEach(function(a){
-      a.href = LINKS.instagram;
-    });
-
-    // オープンチャット/LINEリンクを一括設定（未設定なら遷移を止めて案内）
-    document.querySelectorAll('.js-openchat').forEach(function(a){
-      if (LINKS.openchat && LINKS.openchat !== "#") {
-        a.href = LINKS.openchat;
-      } else {
-        a.addEventListener('click', function(e){
-          e.preventDefault();
-          alert('オープンチャットのリンクは準備中です。決まり次第こちらに設定します。');
-        });
-      }
-    });
-  </script>
+</div>
 </body>
 </html>
